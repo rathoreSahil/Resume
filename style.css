@@ -1,83 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600;8..60,700&display=swap");
-
-:root {
-  --color-primary: #323335;
-  --font-big: 1.35rem;
-  --font-medium: 1.2rem;
-  --font-small: 1.05rem;
-  --color-secondary: #183153;
-}
-
-html {
-  font-size: 80%;
-}
 * {
-  font-family: "Source Serif 4", serif;
-  font-weight: 400;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-body {
-  color: var(--color-primary);
-  padding: 0.25rem 0.25rem;
-}
-.top-container {
-  /* border-bottom: 2px solid #183153; */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 1rem;
-  align-items: center;
-}
-.contacts-container li,
-.contacts-container a {
-  color: #183153;
-  font-weight: 500;
-}
-.phone,
-.address {
-  font-size: var(--font-medium);
-}
-.phone {
-  margin-bottom: 5px;
-  margin-top: 5px;
-}
-.address-container {
-}
-.contacts-container ul {
-  list-style-type: none;
-}
-.contacts-container li {
-  margin: 5px;
-}
-.name-container {
-  font-size: 1.25rem;
-  padding: 0.5rem;
-}
-.name {
-  text-transform: uppercase;
-  color: #183153;
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-family: sans-serif;
 }
 
-.education {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+p {
+  margin: 0px;
+  padding: 0px;
 }
 
-.education-1,
-.education-2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 0.5rem;
-}
-.college-name {
-  font-size: 1.2rem;
-  font-weight: 600;
+ul {
+  margin: 0px;
+  padding-left: 1rem;
+  padding-top: 0.25rem;
 }
 
 a,
@@ -87,82 +20,85 @@ a:active,
 a:hover {
   text-decoration: none;
 }
-i {
-  color: #183153;
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
 }
 
-.container,
-.education-container {
-  padding: 0.1rem 0.75rem;
-  padding-bottom: 0;
-}
-.technical-skills-container > ul,
-.por-container ul {
-  padding-left: 1.5rem;
-}
-
-.container-heading {
-  border-bottom: 2px solid #183153;
-  text-transform: uppercase;
-  font-size: var(--font-big);
+.name {
+  font-size: 2.25rem; /* 36px */
+  line-height: 2.5rem; /* 40px */
   font-weight: 700;
-  color: #183153;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
-  /* padding-left: 1rem; */
 }
-.heading {
-  font-size: var(--font-medium);
+
+.social-profiles {
+  display: flex;
+  column-gap: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 0.5rem;
+}
+
+.contact-icon {
+  place-self: center;
+}
+
+.contact-detail {
+  justify-self: start;
+  align-self: center;
+}
+
+.section-heading {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
   font-weight: 600;
-  padding-left: 0.5rem;
+  border-bottom: 2px solid #000;
+  text-transform: uppercase;
 }
-li span {
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.content-heading {
   font-weight: 600;
-  /* color: #183153; */
-
-  margin-right: 0.25rem;
+  line-height: 1.5rem; /* 24px */
+  text-transform: uppercase;
 }
 
-.content {
-  font-size: var(--font-small);
-  padding-left: 2rem;
-  margin-bottom: 0.5rem;
-}
-.por-container ul {
-}
-.por-heading {
-  font-size: var(--font-small);
-  font-weight: 500;
-  margin-left: 0.5rem;
-  /* scroll-padding: ; */
-}
-.por-heading:not(:last-child) {
-  margin-bottom: 0.2rem;
+.education-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.experience-date {
-  position: absolute;
-  right: 25px;
-  font-size: 1rem;
+.experience-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.portfolio {
-  margin-top: 1rem !important;
-  display: block;
-}
-.portfolio span {
-  margin-top: 0.75rem;
-  font-size: 1.1rem;
-  background-color: var(--color-secondary);
-  color: white !important;
-  padding: 0.3rem 0.7rem;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.por-list > li {
-  font-weight: 500;
+.project-techstack {
+  text-align: right;
+}
+
+.project-techstack > span:not(:last-child) {
+  padding-right: 0.25rem;
+  border-right: 1px solid #000;
 }
